@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <!-- 
+        you can add readonly to the input to make it fixed and the information go to the server
+        you can add disabled to the input to make it fixed and the information does not go to the server
+        you can add autofocus to the input to make auto focus on the input you want
+        you can add minlength="10" to make the minimum number of liters = 10
+        you can add maxlength="15" to make the maximum number of liters = 15
+        you can add radio to the input type to allow the user to choose one thing
+        you can add checked to the input of radio to make this option checked by default
+        you can add checkbox to the input type to allow the user to choose a lot of things
+        you can add checked to the input of checkbox to make this option checked by default
+        you can use textarea to allow the user to write some things
+        you can use select to allow the user to select one some thing
+        you can add multiple to the select item to allow the user to choose a lot things
+        you can add selected  to the options of the select to make this item selected by default
+      -->
+      <div>
+        <label for="user">username</label>
+        <input
+          id="user"
+          type="text"
+          placeholder="username"
+          name="user"
+          value="mahmoud"
+          readonly
+        />
+      </div>
+      <br />
+      <div>
+        <label for="sub">subject</label>
+        <input
+          id="sub"
+          type="text"
+          placeholder="subject"
+          name="sub"
+          autofocus
+        />
+      </div>
+      <br />
+      <div>
+        <label for="phone">phone</label>
+        <input
+          id="phone"
+          type="number"
+          placeholder="your phone"
+          name="phone"
+          minlength="10"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">e-mail</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="e-mail"
+          name="mail"
+          value="mahmoud@gmail.com"
+          disabled
+        />
+      </div>
+      <br />
+      <div>
+        <label for="pass">password</label>
+        <input
+          id="pass"
+          type="password"
+          placeholder="password"
+          name="pass"
+          minlength="8"
+          maxlength="18"
+          required
+        />
+      </div>
+      <hr />
+
+      <div>
+        <input id="windows" type="radio" name="os" value="windows" checked />
+        <label for="windows"> windows</label>
+      </div>
+      <div>
+        <input id="linux" type="radio" name="os" value="linux" />
+        <label for="linux"> linux</label>
+      </div>
+      <div>
+        <input id="mac" type="radio" name="os" value="mac" />
+        <label for="mac"> mac</label>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <div>
+        <input
+          id="windows1"
+          type="checkbox"
+          name="os"
+          value="windows"
+          checked
+        />
+        <label for="windows1"> windows</label>
+      </div>
+      <div>
+        <input id="linux1" type="checkbox" name="os" value="linux" />
+        <label for="linux1"> linux</label>
+      </div>
+      <div>
+        <input id="mac1" type="checkbox" name="os" value="mac" />
+        <label for="mac1"> mac</label>
+      </div>
+      <br />
+
+      <div>
+        <label for="bopk">choose book</label>
+        <select name="book" id="book" multiple>
+          <optgroup label="romantic books">
+            <option value="1">book1</option>
+            <option value="2">book2</option>
+            <option value="3" selected>book3</option>
+          </optgroup>
+          <optgroup label="police books">
+            <option value="4">book4</option>
+            <option value="5">book5</option>
+            <option value="6">book6</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr />
+      <textarea
+        name="subject"
+        id=""
+        cols="30"
+        rows="4"
+        maxlength="100"
+      ></textarea>
+      <hr />
+      <div>
+        <input type="reset" />
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
