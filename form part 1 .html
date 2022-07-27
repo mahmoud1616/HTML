@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <!-- 
+        we can add required to the input to make it required to write
+        we can add placeholder to the input to tell the user what lo write there
+        we can add value to the input to write something on it
+        we can use the element label to write a text beside the input
+        we can add type="the type" to the input to determine the the type of the code 
+        we can add min & max to input  to make a range
+        we can add step="10" to make the value increase by 10
+      -->
+      <div>
+        <input type="hidden" value="shhhhhhhhhh">
+      </div>
+      <div>
+        <label >username</label>
+        <input type="text" required placeholder=" name" name="user">
+      </div>
+      <div>
+        <label >age</label>
+        <input type="number" placeholder="age " name="age" min="18" max="100">
+      </div>
+      <div>
+        <label> e-mail</label>
+        <input type="email" required placeholder="e-mail" name="mail">
+      </div>
+      <div>
+        <label> password</label>
+        <input type="password" placeholder="password" required name="pass">
+      </div>
+      <div>
+        <input type="range" name="range" value="0" step="1" min="0" max="100">
+        <br>
+        <input type="color" name="color">
+      </div>
+      <div>
+        <input type="submit" value="save">
+      <input type="reset">
+      </div>
+    </form> 
+  </body>
+</html>
