@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="">
+      <label for="user">username</label>
+      <input
+        id="user"
+        type="text"
+        placeholder="username"
+        value="Mahmoud"
+        name="user"
+        readonly
+      />
+      <hr />
+      <label for="age">age</label>
+      <input
+        id="age"
+        type="number"
+        placeholder="age"
+        min="18"
+        max="80"
+        name="age"
+        required
+      />
+      <hr />
+      <label for="phone">phone-number</label>
+      <input
+        id="phone"
+        type="number"
+        placeholder="phone-number"
+        min="999999999"
+        max="9999999999"
+        name="number"
+        required
+      />
+      <hr />
+      <label for="mail">e-mail</label>
+      <input
+        id="mail"
+        type="email"
+        placeholder="e-mail"
+        value="mahmoud@gmail.com"
+        name="mail"
+        disabled
+      />
+      <hr />
+      <label for="pass">password</label>
+      <input
+        id="pass"
+        type="password"
+        placeholder="password"
+        minlength="8"
+        maxlength="18"
+        name="pass"
+        required
+      />
+      <hr />
+      <label for="sub">subject</label>
+      <input id="sub" type="text" placeholder="subject" name="sub" autofocus />
+      <hr />
+      <label for="y-on-w"><sup>years you worked in developing</sup></label>
+      <input
+        id="y-on-w"
+        type="range"
+        value="0"
+        min="0"
+        max="40"
+        step="1"
+        name="y-on-w"
+        required
+      />
+      <hr />
+      <input id="windows" type="checkbox" name="os" value="windows" checked />
+      <label for="windows"> windows</label>
+      <br />
+      <input id="linux" type="checkbox" name="os" value="linux" />
+      <label for="linux"> linux</label>
+      <br />
+      <input id="mac" type="checkbox" name="os" value="mac" />
+      <label for="mac"> mac</label>
+      <hr />
+      <input id="windows1" type="radio" name="os" value="windows" checked />
+      <label for="windows1">windows</label>
+      <br />
+      <input id="linux1" type="radio" name="os" value="linux" />
+      <label for="linux1">linux</label>
+      <br />
+      <input id="mac1" type="radio" name="os" value="mac" />
+      <label for="mac1">mac</label>
+      <hr />
+      <input list="programing" name="prog" />
+      <datalist id="programing">
+        <option value="c++"></option>
+        <option value="c#"></option>
+        <option value="java"></option>
+        <option value="php"></option>
+      </datalist>
+      <hr />
+      <input type="reset" />
+      <input type="submit" value="save" />
+    </form>
+  </body>
+</html>
